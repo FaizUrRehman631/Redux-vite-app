@@ -30,10 +30,13 @@ export const counterSlice = createSlice({
     incrementByAmount: (state, action) => {
       state.value += action.payload
     },
+    decrementByAmount: (state, action) => {
+      state.value -= action.payload
+    },
   },
 })
 
 // Action creators are generated for each case reducer function
-export const { increment, decrement, multiply, reset, divide,incrementByAmount } = counterSlice.actions
+export const { increment, decrement, multiply, reset ,decrementByAmount, divide,incrementByAmount } = counterSlice.actions
 
 export default counterSlice.reducer;

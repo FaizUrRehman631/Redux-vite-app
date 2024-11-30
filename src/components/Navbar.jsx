@@ -8,9 +8,12 @@ const Navbar = () => {
     
     
   return (
+    <>
     <h3 className='border rounded mb-3'>
-      I'm a Navabar and Count is: {count}
+     Welcome to the counter
     </h3>
+    <h4>The initial count is: {count}</h4>
+    </>
   )
 }
 
